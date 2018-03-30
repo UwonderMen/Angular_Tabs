@@ -1,0 +1,48 @@
+body,ul,li,p {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+}
+
+a {
+	color :#000;
+	text-decoration: none;
+}
+
+li {
+	list-style-type: none;
+}
+
+.container {
+	width: 500px;
+	height: 190px;
+	overflow:hidden; 
+	margin: 100px auto;
+}
+
+ul.menu li {
+
+	float: left;
+	margin:0px 4px;
+}
+
+ul.menu li a {
+	padding: 5px 8px;
+	display: inline-block;
+	background-color: #aaa;
+}
+
+ul.menu li a.current {
+	background-color: #eee;
+}
+
+.tabs {
+	clear: both;
+	height: 148px;
+	background-color: #eee;
+}
+
+.tabs ul li p {
+	padding: 8px 20px;
+}
+

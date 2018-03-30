@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./css/base.css">
+	<script src="./js/angular.min.js"></script>
+</head>
+<body ng-app="App">
+	<div class="container" ng-controller="DeomController">
+		<ul class="menu">
+			<li>
+				<a href="javascript:;" ng-class="{current:type == 'local'}" ng-click="show('local')">本地军事新闻</a>
+			</li>
+			<li>
+				<a href="javascript:;" ng-class="{current:type == 'global'}" ng-click="show('global')">全球军事新闻</a>
+			</li>
+			<li>
+				<a href="javascript:;" ng-class="{current:type == 'news'}" ng-click="show('news')">娱乐新闻</a>
+			</li>
+
+			<li>
+				<a href="javascript:;" ng-class="{current:type == 'socity'}" ng-click="show('socity')">生活新闻</a>
+			</li>
+		</ul>
+		<div class="tabs">
+			<ul ng-switch on="type">
+				<li ng-switch-when="local">
+					<p>许多生活能见的，都是最美好的事</p>
+					<p>许多生活能见的，都是最美好的事</p>
+					<p>许多生活能见的，都是最美好的事</p>
+					<p>许多生活能见的，都是最美好的事</p>
+				</li>
+				<li ng-switch-when="global">
+					<p>爱情能让人成长</p>
+					<p>爱情能让人成长</p>
+					<p>爱情能让人成长</p>
+					<p>爱情能让人成长</p>
+				</li>
+				<li ng-switch-when="news">
+					<p>长大了</p>
+					<p>长大了</p>
+					<p>长大了</p>
+					<p>长大了</p>
+				</li>
+				<li ng-switch-when="socity">
+					<p>许多年以后</p>
+					<p>许多年以后</p>
+					<p>许多年以后</p>
+					<p>许多年以后</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<script src="./js/index.js"></script>
+</body>
+</html>
